@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) 2019 ULTA
+ * http://www.ulta.com
+ * 9008570@ulta.com
+ * All rights reserved
+ */
 package com.ulta.boilerplate.controller;
 
 import static com.ulta.boilerplate.constant.HelloConstant.HELLO_URI;
@@ -18,6 +24,13 @@ public class HelloController {
 	
 	@Autowired 
 	HelloService helloService;
+	
+	/**
+	 * This main is controlling flow of boilerplate api.
+	 * @return
+	 * @throws HelloException
+	 */
+	
 	@RequestMapping(path = HELLO_URI,method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<HelloResponse> getHelloWord() throws HelloException {
 		HelloResponse helloResponse = helloService.getHelloWord();

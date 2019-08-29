@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2019 ULTA
  * http://www.ulta.com
- * BrijendraK@ulta.com
+ * 9008570@ulta.com
  * All rights reserved
  */
 package com.ulta.boilerplate;
@@ -18,6 +18,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 public class BoilerplateApplication {
 
+	/**
+	 * Main application class for start-up
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(BoilerplateApplication.class, args);
 	}
