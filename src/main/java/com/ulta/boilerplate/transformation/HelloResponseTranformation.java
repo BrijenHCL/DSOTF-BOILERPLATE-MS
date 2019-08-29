@@ -6,6 +6,16 @@
  */
 package com.ulta.boilerplate.transformation;
 
+import java.util.Calendar;
+
+import com.ulta.boilerplate.response.HelloResponse;
+
 public class HelloResponseTranformation {
+	
+	public HelloResponse helloResponseTransalation(HelloResponse helloResponse){
+		helloResponse.setDate(Calendar.getInstance().getTime());
+		return helloResponse;
+		
+	}
 
 }

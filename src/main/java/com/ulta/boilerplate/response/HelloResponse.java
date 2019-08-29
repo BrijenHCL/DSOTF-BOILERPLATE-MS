@@ -6,8 +6,11 @@
  */
 package com.ulta.boilerplate.response;
 
+import java.util.Date;
+
 public class HelloResponse {
 	private String message = null;
+	private Date date= null;
 
 	/**
 	 * @return the message
@@ -21,5 +24,19 @@ public class HelloResponse {
 	 */
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	/**
+	 * @return the date
+	 */
+	public Date getDate() {
+		return date;
+	}
+
+	/**
+	 * @param date the date to set
+	 */
+	public void setDate(Date date) {
+		this.date = date;
 	}
 }
